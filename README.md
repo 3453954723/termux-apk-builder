@@ -109,3 +109,28 @@ cp MyApp/build/app.apk ~/storage/downloads/
 ## 许可证
 
 MIT License
+
+---
+
+## 作者有话说
+
+大家好，我是**星社**！
+
+这个项目诞生于一个简单的想法：能不能在手机上直接编译 Android App，不需要电脑，不需要 Android Studio？
+
+经过反复尝试和踩坑，终于在 Termux 上实现了这个目标。过程中遇到了很多问题：
+- aapt v0.2 太旧，生成的 APK 在新系统上无法安装
+- aapt2 的 ARM 版本难以获取
+- Android 16 的 SELinux 策略更加严格
+
+最终通过安装 Termux 官方源的 aapt2 包解决了所有问题。
+
+**希望这个工具能帮到你！** 如果觉得有用，欢迎 Star 支持一下~
+
+有问题或建议，欢迎提 Issue！
+
+---
+
+> 星社 | 2026.05.04
+> 
+> "在终端里，我们也能创造属于自己的 App。"
